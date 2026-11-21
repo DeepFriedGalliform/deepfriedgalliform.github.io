@@ -1,6 +1,6 @@
 # MultiTouch guide
 
-MultiTouch (version 1.0) turns a small round Waveshare touch board into a pocket set of tools, scorers, games, puzzles, party games and, on the AMOLED boards, music makers. Two AMOLED boards can also play together (see Two boards). Everything is played on the round screen with taps, swipes, drags round the rim, tilting, shaking and knocking.
+MultiTouch (version 1.1) turns a small round Waveshare touch board into a pocket set of tools, scorers, games, puzzles, party games and, on the AMOLED boards, music makers. Two AMOLED boards can also play together (see Two boards). Everything is played on the round screen with taps, swipes, drags round the rim, tilting, shaking and knocking.
 
 ![The home menu](multitouch/screens/home.png)
 
@@ -106,6 +106,7 @@ Pictures of more screens are in [multitouch/screens](multitouch/screens/). They 
 | Four in a row | Tap a column to drop a disc, and get four in a line. Play the device or a friend. |
 | Mancala | The traditional six-pit sowing game, round the ring. Play the device or a friend. |
 | Higher or lower | Guess whether the next card is higher (tap the top half) or lower (the bottom half). |
+| Carrooka | Snooker with flicked pieces on a round board with six pockets. Flick the striker into the pieces (or, with Shoot by in the options, pull it back and let go; the further, the harder). While the striker is on the break line, drag it round the line or tap a spot on it; otherwise you shoot from where it stopped. Game (in the options): full Carrooka (pot a red, tap a colour to call it, pot that; after the reds, the colours in order; a foul scores nothing and gives the other player a bonus shot, and if the foul leaves them Carrooka'd they choose Break line, Free counter or Skip), UK pool, US pool (numbered spots and stripes) or 9-ball (numbered). Play the device (easy, fair or hard) or a friend. The best is how many times you have beaten the device on hard. |
 
 ### Puzzles
 | Mode | What it does and how to use it |
@@ -171,7 +172,7 @@ Two AMOLED boards running MultiTouch link up directly by radio, a few metres apa
 
 | Kind | Modes |
 |---|---|
-| A player each | Game clock (a clock each: tap anywhere when you have moved), X & O, Four in a row, Mancala (your own side at the bottom on each board), Five dice, Reaction duel, Tap race, and Hot potato (hold it a moment until the ring fills, then tap or swipe to throw it to the other board; whoever has it when it goes off is out). |
+| A player each | Game clock (a clock each: tap anywhere when you have moved), X & O, Four in a row, Mancala (your own side at the bottom on each board), Carrooka (each board shows the table from its own side), Five dice, Reaction duel, Tap race, and Hot potato (hold it a moment until the ring fills, then tap or swipe to throw it to the other board; whoever has it when it goes off is out). |
 | Races | Higher or lower (the same deck), Quick maths (the same sums), Colour clash, Echo (the same pattern), Shake-off, Steady hand and Guess the time (both clocks start together). A tap on either board starts both; each plays on its own board, and the scores are compared at the end. |
 | One scoreboard | Points, Snooker, Darts and Cards show the same score on both boards. Either can score, and undo works on either. |
 
@@ -182,7 +183,7 @@ Two AMOLED boards running MultiTouch link up directly by radio, a few metres apa
 | Screen | 1.75" round AMOLED, 466 x 466 | 1.75" round AMOLED, 466 x 466 | 1.28" round LCD, 240 x 240 |
 | Sound | Speaker on the board | A speaker plugs into its socket | None: alerts flash on the screen |
 | Microphones | Two (the Sampler works) | None known (the Sampler says "No mic") | None |
-| Modes | All 65, music and the Duo group included | All but a working Sampler | 55: every mode but Music and Duo |
+| Modes | All 66, music and the Duo group included | All but a working Sampler | 56: every mode but Music and Duo |
 | Two boards | Yes, with another AMOLED board | Yes, with another AMOLED board | No |
 | Game and alarm sounds | Yes (Sound: Off to Max) | Yes, with a speaker fitted | No |
 | File space | 24 MB (room for many recordings) | 1 MB | 1 MB |
