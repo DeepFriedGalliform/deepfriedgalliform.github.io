@@ -1,6 +1,6 @@
 # MultiTouch guide
 
-MultiTouch (version 0.9q) turns a small round Waveshare touch board into a pocket set of tools, scorers, games, puzzles, party games and, on the AMOLED boards, music makers. Everything is played on the round screen with taps, swipes, drags round the rim, tilting, shaking and knocking.
+MultiTouch (version 1.0) turns a small round Waveshare touch board into a pocket set of tools, scorers, games, puzzles, party games and, on the AMOLED boards, music makers. Two AMOLED boards can also play together (see Two boards). Everything is played on the round screen with taps, swipes, drags round the rim, tilting, shaking and knocking.
 
 ![The home menu](multitouch/screens/home.png)
 
@@ -149,6 +149,32 @@ All five share one layout:
 | Motion | Play by moving the device: tilt for the note and its tone, and shake or knock to play drums. |
 | Sampler (1.75C only) | Record up to 30 seconds with the built-in microphones; each recording is raised to full level when it stops. Trim it (drag the handles; ▶ plays it), chop it (‹ count › and an Even / Hits switch), then put the slices on pads. The ‹ at the top goes back a step, the green button on. |
 
+## Two boards (AMOLED boards only)
+
+Two AMOLED boards running MultiTouch link up directly by radio, a few metres apart. No Wi-Fi network or router is needed. The 1.28" board can't link.
+
+- **Pair them once:** open **Duo > Pair** on both, then knock them together edge to edge, or tap the other board's name in the list. They stay paired after a restart. Pair shows whether the other board is in reach, and has **Ping it** (the other board beeps), **Turn the gate** (the mark on the rim that points at the other board: turn it a quarter if the knock got the side wrong) and **Unpair** (tap twice).
+- **Start a game:** open a Duo game, or choose **Two boards** in a mode's options. The other board opens the same thing and shows "wants to play": tap to join, hold for no thanks. **One board**, in the same place in the options, goes back to playing alone.
+- **Who's in charge:** the board that asked is the host, and its settings are used.
+- **Out of reach:** the game shows "Lost them" and waits. After 8 seconds both boards give up. Leaving the mode, Exit or standby tells the other board.
+
+### The Duo group
+
+| Mode | How it works |
+|---|---|
+| Quick Draw | Wait for DRAW!, then flick your wrist. The first flick wins the round; a flick before DRAW! loses it. First to 3. |
+| Blind Maze | One board rolls an orb through a maze it can't see; the other sees the whole maze and talks the roller to the middle. Four levels, swapping roles. |
+| Star Feeder | One board swipes stars out through the gate; the other tilts a basket to catch them. Catch the gold, dodge the red. Two rounds, swapping roles. |
+| Defuse Duo | One board has the bomb (wires, symbols, a button, lights), the other has the rules. Talk it through before the 3 minutes run out. |
+
+### Two boards in other modes
+
+| Kind | Modes |
+|---|---|
+| A player each | Game clock (a clock each: tap anywhere when you have moved), X & O, Four in a row, Mancala (your own side at the bottom on each board), Five dice, Reaction duel, Tap race, and Hot potato (hold it a moment until the ring fills, then tap or swipe to throw it to the other board; whoever has it when it goes off is out). |
+| Races | Higher or lower (the same deck), Quick maths (the same sums), Colour clash, Echo (the same pattern), Shake-off, Steady hand and Guess the time (both clocks start together). A tap on either board starts both; each plays on its own board, and the scores are compared at the end. |
+| One scoreboard | Points, Snooker, Darts and Cards show the same score on both boards. Either can score, and undo works on either. |
+
 ## The three boards
 
 | | ESP32-S3-Touch-AMOLED-1.75C | ESP32-S3-Touch-AMOLED-1.75 | ESP32-S3-Touch-LCD-1.28 |
@@ -156,7 +182,8 @@ All five share one layout:
 | Screen | 1.75" round AMOLED, 466 x 466 | 1.75" round AMOLED, 466 x 466 | 1.28" round LCD, 240 x 240 |
 | Sound | Speaker on the board | A speaker plugs into its socket | None: alerts flash on the screen |
 | Microphones | Two (the Sampler works) | None known (the Sampler says "No mic") | None |
-| Modes | All 60, music included | All but a working Sampler | 55: every mode but Music |
+| Modes | All 65, music and the Duo group included | All but a working Sampler | 55: every mode but Music and Duo |
+| Two boards | Yes, with another AMOLED board | Yes, with another AMOLED board | No |
 | Game and alarm sounds | Yes (Sound: Off to Max) | Yes, with a speaker fitted | No |
 | File space | 24 MB (room for many recordings) | 1 MB | 1 MB |
 | Battery | Battery and charging chip (AXP2101) | Battery and charging chip (AXP2101) | Battery level read by the board |
